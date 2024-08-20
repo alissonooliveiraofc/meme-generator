@@ -1,13 +1,38 @@
 body {
   padding: 0;
   box-sizing: border-box;
-  text-align: center;
+  /* text-align: center; */
   font-family: "Kode Mono", monospace;
+}
+
+main, header, footer {
+  text-align: center;
+  position: relative;
 }
 
 input {
   margin: 3px;
 }
+
+aside {
+  width: 200px;
+  display: block;
+  background-color: #efefef;
+  padding: 15px;
+  position: absolute;
+  top: 170px;
+  left: 100px;
+  border-radius: 17px;
+}
+
+aside h2 {
+  font-size: 10px;
+}
+
+aside p {
+  font-size: 12px;
+}
+
 #meme-image-container {
   text-align: center;
   margin: 10px auto;
