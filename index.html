@@ -4,27 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Kode+Mono:wght@400..700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
 <body>
-  <h1>Meme Generator</h1>
+  <header>
+    <h1>Meme Generator</h1>
+  </header>
+
   <main>
-    <form>
-      <label for="text-input">Texto:</label>
-      <input type="text" id="text-input" placeholder="Digite sua Frase"><br>
 
-      <label for="meme-insert">Foto:</label>
-      <input type="file" name="" id="meme-insert" accept="image/*">
+    <label for="text-input">Texto:</label>
+    <input type="text" id="text-input" placeholder="Digite sua Frase" maxlength="60"><br>
 
-      <div id="meme-image-container" style="background-color: black;">
-        <img src="" alt="Minha Imagem" id="meme-image">
-        <p id="meme-text" style="color: white;">My awesome meme</p>
+    <label for="meme-insert" id="minha-label">Foto:</label>
+    <input type="file" name="" id="meme-insert" accept="image/*">
 
+    <div id="meme-image-container">
+      <div id="meme-image">
+        <p id="meme-text">AGUARDANDO FRASE...</p>
       </div>
-    </form>
+
+    </div>
+
+
+    <h3>Modelos</h3>
+    <button id="fire">Fire</button>
+    <button id="water">Water</button>
+    <button id="earth">Earth</button>
   </main>
+
+  <footer>
+    <h3>Memes Prontos</h3>
+
+    <div id="meme-1" class="memes-prontos"></div>
+    <div id="meme-2" class="memes-prontos"></div>
+    <div id="meme-3" class="memes-prontos"></div>
+    <div id="meme-4" class="memes-prontos"></div>
+  </footer>
 
 
 </body>
