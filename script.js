@@ -7,7 +7,10 @@ const meme1 = document.getElementById('meme-1');
 const meme2 = document.getElementById('meme-2');
 const meme3 = document.getElementById('meme-3');
 const meme4 = document.getElementById('meme-4');
+const canvas = document.createElement('canvas');
+const ctx = canvas.getContext('2d');
 
+// faz o upload da imagem
 const upImage = () => {
   const file = inputImg.files[0];
   imgContainer.style.backgroundImage = `url(${URL.createObjectURL(file)})`;
@@ -16,6 +19,33 @@ const upImage = () => {
   imgContainer.style.backgroundRepeat = 'no-repeat';
 };
 inputImg.addEventListener('change', upImage);
+
+// cria botão de download
+const downloadBtn = document.getElementById('download-btn');
+
+// feature de baixar a imagem usando canvas
+function downloadImage() {
+  const width = imgContainer.clientWidth;
+  const height = imgContainer.clientHeight;
+  canvas.width = width;
+  canvas.height = height;
+
+  const img = new Image();
+  img.src = imgContainer.style.backgroundImage.slice(5, -2);
+  img.onload = () => {
+    ctx.drawImage(img, 0, 0, width, height);
+    ctx.font = '30px "Alfa Slab One", serif';
+    ctx.fillStyle = 'yellow';
+    ctx.textAlign = 'center';
+    ctx.fillText(text.innerText, width / 2, height - 30);
+    const link = document.createElement('a');
+    link.href = canvas.toDataURL('image/png');
+    link.download = 'meme.png';
+    link.click();
+  };
+}
+
+downloadBtn.addEventListener('click', downloadImage);
 
 input.addEventListener('change', () => {
   const texto = input.value;
