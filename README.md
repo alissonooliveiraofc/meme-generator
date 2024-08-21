@@ -4,6 +4,9 @@ Seja bem vindo(a) ao meu criador de memes, abaixo vou deixar algumas instruçõe
 
 ## Baby Steps 👶
 
+### Features
+- [x] Adicionada responsividade para dispositivos móveis.
+      
 ### Instruções de Uso
 1. Escreva seu Texto no campo a direita.
 2. Escolha sua imagem ou clique em uma pré-definida.
