@@ -14,5 +14,5 @@ Seja bem vindo(a) ao meu criador de memes, abaixo vou deixar algumas instruçõe
 4. Se preferir, abra o WhatsAppWeb e vá em alguma conversa e depois clique em criar figurinha, selecione o arquivo baixado.
 5. Pronto, pode zuar aquele seu amigo(a) agora!
 
-🔗 Ah e não menos importante se conecte comigo via (Linkedin)[https://www.linkedin.com/in/alissonooliveira/].
+🔗 Ah e não menos importante se conecte comigo via [Linkedin](https://www.linkedin.com/in/alissonooliveira/).
 Caso precise de um serviço ou tenha indicações/opniões estou a uma mensagem de distância.
