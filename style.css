@@ -1,3 +1,38 @@
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  main {
+    position: relative;
+    margin-top: 320px;
+  }
+
+  header {
+    position: relative;
+  }
+
+  aside {
+    position: absolute;
+    text-align: center;
+    margin: -100px auto 0 -20px;
+  }
+
+  #meme-insert {
+    margin-left: -5px;
+  }
+
+  #meme-image-container {
+    text-align: center;
+    margin: 10px auto;
+    max-height: 400px;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border: solid 1px black;
+  }
+}
+
 body {
   padding: 0;
   box-sizing: border-box;
